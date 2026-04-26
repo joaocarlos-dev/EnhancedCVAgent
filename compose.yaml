@@ -1,0 +1,7 @@
+﻿services:
+  enhancedcvagent:
+    image: enhancedcvagent
+    build:
+      context: .
+      dockerfile: EnhancedCVAgent/Dockerfile
+
