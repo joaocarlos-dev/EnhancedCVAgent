@@ -1,4 +1,5 @@
 using EnhancedCVAgent.Domain.Enums;
+using EnhancedCVAgent.Domain.Exceptions;
 
 namespace EnhancedCVAgent.Domain.ValueObjects;
 
@@ -10,7 +11,7 @@ public class Skill
     public Skill(string name, SkillLevel level)
     {
         if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentNullException(name, "Skill can not be empty.");
+            throw new DomainValidationException("Skill can not be empty.");
         
         Name = name.Trim().ToLowerInvariant();
         Level = level;
