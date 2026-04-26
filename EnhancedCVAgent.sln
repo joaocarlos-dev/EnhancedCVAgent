@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedCVAgent.Api", "EnhancedCVAgent.Api\EnhancedCVAgent.Api.csproj", "{FF37E419-974C-4B45-894C-D94306091B9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhancedCVAgent.Api", "src\EnhancedCVAgent.Api\EnhancedCVAgent.Api.csproj", "{FF37E419-974C-4B45-894C-D94306091B9E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C27FDE2D-047A-4B2B-9E19-1E5C16C913E0}"
 	ProjectSection(SolutionItems) = preProject
