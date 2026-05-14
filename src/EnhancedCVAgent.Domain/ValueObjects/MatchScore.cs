@@ -5,17 +5,17 @@ namespace EnhancedCVAgent.Domain.ValueObjects;
 
 public class MatchScore
 {
-    public MatchScore(int technicalScore, int totalScore, IEnumerable<Skill> missingSKills, ConfidenceLevel confidence)
+    public MatchScore(int technicalScore, int totalScore, IEnumerable<Skill> missingSkills, ConfidenceLevel confidence)
     {
         TechnicalScore = technicalScore;
         TotalScore = totalScore;
-        MissingSKills = missingSKills.ToList().AsReadOnly();
+        MissingSkills = missingSkills.ToList().AsReadOnly();
         Confidence = confidence;
     }
 
     public int TotalScore { get; }
     public int TechnicalScore { get; }
-    public IReadOnlyCollection<Skill> MissingSKills { get;  }
+    public IReadOnlyCollection<Skill> MissingSkills { get;  }
     public ConfidenceLevel Confidence { get; }
 
     public static MatchScore Create(
@@ -57,7 +57,7 @@ public class MatchScore
         return TotalScore == other.TotalScore &&
                TechnicalScore == other.TechnicalScore &&
                Confidence == other.Confidence &&
-               MissingSKills.SequenceEqual(other.MissingSKills);
+               MissingSkills.SequenceEqual(other.MissingSkills);
     }
 
     public override int GetHashCode()
