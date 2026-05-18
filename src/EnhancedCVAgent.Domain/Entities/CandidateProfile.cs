@@ -8,13 +8,19 @@ namespace EnhancedCVAgent.Domain.Entities
 {
     public class CandidateProfile : Entity
     {
-        public CandidateProfile(string fullName, string professionalSummary, List<Skill> skills, List<string> experiences, List<string> educations, List<string> languages, List<string> certifications)
+        public CandidateProfile(string fullName, 
+            string professionalSummary, 
+            List<Skill> skills, 
+            List<Experience> experiences, 
+            List<Education> education, 
+            List<string> languages, 
+            List<string> certifications)
         {
             FullName = fullName;
             ProfessionalSummary = professionalSummary;
             Skills = skills;
             Experiences = experiences;
-            Educations = educations;
+            Education = education;
             Languages = languages;
             Certifications = certifications;
         }
@@ -22,8 +28,8 @@ namespace EnhancedCVAgent.Domain.Entities
 
         public string ProfessionalSummary { get; protected set; }
         public List<Skill> Skills { get; protected set; }
-        public List<string> Experiences { get; protected set;  }
-        public List<string> Educations {  get; protected set; }
+        public List<Experience> Experiences { get; protected set;  }
+        public List<Education> Education {  get; protected set; }
         public List<string> Languages { get; protected set;  }
         public List<string> Certifications { get; protected set; }
 
