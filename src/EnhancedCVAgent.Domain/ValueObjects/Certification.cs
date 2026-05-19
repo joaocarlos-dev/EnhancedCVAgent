@@ -14,11 +14,6 @@ namespace EnhancedCVAgent.Domain.ValueObjects
                 throw new DomainValidationException("Certification name cannot be empty.");
             }
 
-            if (TotalHours == null)
-            {
-                throw new DomainValidationException("Total hours cannot be empty.");
-            }
-
             if (totalHours  < 2)
             {
                 throw new DomainValidationException("Total hours cannot be less than 2.");
