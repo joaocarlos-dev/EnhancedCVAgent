@@ -14,7 +14,7 @@ namespace EnhancedCVAgent.Domain.Entities
             List<Experience> experiences, 
             List<Education> educations, 
             List<Language> languages, 
-            List<string> certifications)
+            List<Certification> certifications)
         {
             FullName = fullName;
             ProfessionalSummary = professionalSummary;
@@ -30,6 +30,6 @@ namespace EnhancedCVAgent.Domain.Entities
         public List<Experience> Experiences { get; protected set;  }
         public List<Education> Educations {  get; protected set; }
         public List<Language> Languages { get; protected set;  }
-        public List<string> Certifications { get; protected set; }
+        public List<Certification> Certifications { get; protected set; }
     }
 }
