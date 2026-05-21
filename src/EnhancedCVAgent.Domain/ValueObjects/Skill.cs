@@ -3,7 +3,7 @@ using EnhancedCVAgent.Domain.Exceptions;
 
 namespace EnhancedCVAgent.Domain.ValueObjects;
 
-public class Skill
+public sealed record Skill
 {
     public string Name { get; private set; }
     public SkillLevel Level { get; private set; }

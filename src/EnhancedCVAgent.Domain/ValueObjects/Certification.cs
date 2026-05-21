@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EnhancedCVAgent.Domain.ValueObjects
 {
-    public class Certification
+    public sealed record Certification
     {
         public Certification(string name, int totalHours)
         {

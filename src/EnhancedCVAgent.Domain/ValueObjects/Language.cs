@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EnhancedCVAgent.Domain.ValueObjects
 {
-    public class Language
+    public sealed record Language
     {
         public Language(string languageName, string languageLevel)
         {
