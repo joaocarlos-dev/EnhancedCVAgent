@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnhancedCVAgent.Domain.ValueObjects
+namespace EnhancedCVAgent.Domain.ValueObjects.CandidateProfile
 {
     public sealed record Language
     {
