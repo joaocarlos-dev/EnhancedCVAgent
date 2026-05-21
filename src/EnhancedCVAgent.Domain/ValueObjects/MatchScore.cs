@@ -1,7 +1,8 @@
 using EnhancedCVAgent.Domain.Enums;
 using EnhancedCVAgent.Domain.Exceptions;
+using EnhancedCVAgent.Domain.ValueObjects.CandidateProfile;
 
-namespace EnhancedCVAgent.Domain.ValueObjects.CandidateProfile;
+namespace EnhancedCVAgent.Domain.ValueObjects;
 
 public class MatchScore
 {
