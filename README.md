@@ -1,5 +1,9 @@
 # EnhancedCVAgent
 
+## Project Roadmap
+
+The fixed delivery stages, MVP definitions, scope boundaries, and architecture flowcharts are documented in [PROJECT_ROADMAP.md](docs/PROJECT_ROADMAP.md).
+
 ## Overview
 
 EnhancedCVAgent is an intelligent resume optimization platform built with C#, .NET 10, and enterprise-grade architectural principles. Its purpose is to analyze job opportunities and company positioning, extract technical and cultural signals, compare them against a candidate’s professional profile, and generate strategically tailored ATS-friendly resume versions aligned with specific opportunities.
