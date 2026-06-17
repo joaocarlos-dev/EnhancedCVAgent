@@ -4,9 +4,8 @@ using System.Text;
 
 public enum WorkMode
 {
-    CLT,
-    PJ,
-    Cooperado,
-    Estágio,
-    Freelancer
+    NaoInformado,
+    Remoto,
+    Presencial,
+    Hibrido
 }
