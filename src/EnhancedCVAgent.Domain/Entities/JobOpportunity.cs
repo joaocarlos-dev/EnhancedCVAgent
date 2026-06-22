@@ -16,7 +16,7 @@ namespace EnhancedCVAgent.Domain.Entities
         private readonly List<JobSkillRequirement> _jobSkillRequirements = [];
         private readonly List<Responsability> _responsibilities = [];
         public SeniorityLevel SeniorityLevel { get; }
-        private readonly List<string> _qualifications = [];
+        private readonly List<Qualification> _qualifications = [];
         public DateOnly ExtractedAt { get; }
 
     }
