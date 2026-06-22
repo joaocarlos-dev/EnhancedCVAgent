@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EnhancedCVAgent.Domain.ValueObjects.JobOpportunity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,10 +13,11 @@ namespace EnhancedCVAgent.Domain.Entities
         public string Description { get; }
         public WorkMode WorkMode { get; }
         public EmploymentType EmploymentType { get; }
-        private readonly List<string> _jobSkillRequirement = [];
-        private readonly List<string> Responsibilities = [];
+        private readonly List<JobSkillRequirement> _jobSkillRequirements = [];
+        private readonly List<Responsability> _responsibilities = [];
         public SeniorityLevel SeniorityLevel { get; }
-        public string Qualifications {  get; }
+        private readonly List<string> _qualifications = [];
         public DateOnly ExtractedAt { get; }
+
     }
 }
