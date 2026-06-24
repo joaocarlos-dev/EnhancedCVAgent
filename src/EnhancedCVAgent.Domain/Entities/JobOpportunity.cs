@@ -1,4 +1,5 @@
-﻿using EnhancedCVAgent.Domain.Exceptions;
+﻿using EnhancedCVAgent.Domain.Common;
+using EnhancedCVAgent.Domain.Exceptions;
 using EnhancedCVAgent.Domain.ValueObjects.JobOpportunity;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace EnhancedCVAgent.Domain.Entities
 {
-    public class JobOpportunity
+    public class JobOpportunity : Entity
     {
         public JobOpportunity(
             string url,
