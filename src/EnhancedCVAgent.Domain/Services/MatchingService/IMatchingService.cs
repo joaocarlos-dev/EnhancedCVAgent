@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnhancedCVAgent.Domain.Services
+namespace EnhancedCVAgent.Domain.Services.MatchingService.MatchingService
 {
     public interface IMatchingService
     {
