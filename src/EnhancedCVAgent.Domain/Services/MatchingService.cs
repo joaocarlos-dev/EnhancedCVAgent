@@ -1,10 +1,16 @@
-﻿using System;
+﻿using EnhancedCVAgent.Domain.Entities;
+using EnhancedCVAgent.Domain.ValueObjects.Matching;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace EnhancedCVAgent.Domain.Services
 {
-    internal class MatchingService
+    public sealed class MatchingService: IMatchingService
     {
+        public MatchingReport Match(CandidateProfile candidate, JobOpportunity jobOpportunity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
