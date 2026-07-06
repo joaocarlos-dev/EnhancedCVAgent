@@ -1,4 +1,6 @@
-﻿using EnhancedCVAgent.Domain.ValueObjects.Matching;
+﻿using EnhancedCVAgent.Domain.ValueObjects;
+using EnhancedCVAgent.Domain.ValueObjects.CandidateProfile;
+using EnhancedCVAgent.Domain.ValueObjects.Matching;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,24 +15,24 @@ namespace EnhancedCVAgent.Domain
             Score = score;
         }
 
-        private readonly List<MissingSkill> _missingRequiredSkills = [];
-        private readonly List<MissingSkill> _missingPreferredSkills = [];
+        private readonly List<Skill> _missingRequiredSkills = [];
+        private readonly List<Skill> _missingPreferredSkills = [];
         private readonly List<SkillMatch> _skillMatches = [];
         private readonly List<string> _reasons = [];
 
         public IReadOnlyCollection<string> Reasons => _reasons.AsReadOnly();
 
-        public IReadOnlyCollection<MissingSkill> MissingRequiredSkills => _missingRequiredSkills.AsReadOnly();
-        public IReadOnlyCollection<MissingSkill> MissingPreferredSkills => _missingPreferredSkills.AsReadOnly();
+        public IReadOnlyCollection<Skill> MissingRequiredSkills => _missingRequiredSkills.AsReadOnly();
+        public IReadOnlyCollection<Skill> MissingPreferredSkills => _missingPreferredSkills.AsReadOnly();
         public IReadOnlyCollection<SkillMatch> SkillMatches => _skillMatches.AsReadOnly();
 
-        public void AddMissingRequiredSkill(MissingSkill requiredSkill)
+        public void AddMissingRequiredSkill(Skill requiredSkill)
         {
             _missingRequiredSkills.Add(requiredSkill);
             _reasons.Add($"Missing required skill '{requiredSkill}'");
         }
 
-        public void AddMissingPreferredSkill(MissingSkill preferredSkill)
+        public void AddMissingPreferredSkill(Skill preferredSkill)
         {
             _missingPreferredSkills.Add(preferredSkill);
             _reasons.Add($"Missing preferred skill '{preferredSkill}'");

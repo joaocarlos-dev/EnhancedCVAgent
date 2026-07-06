@@ -1,7 +1,7 @@
 using EnhancedCVAgent.Domain.Enums;
 using EnhancedCVAgent.Domain.Exceptions;
 
-namespace EnhancedCVAgent.Domain.ValueObjects.CandidateProfile;
+namespace EnhancedCVAgent.Domain.ValueObjects;
 
 public sealed record Skill
 {

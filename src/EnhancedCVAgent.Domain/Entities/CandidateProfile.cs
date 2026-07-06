@@ -1,5 +1,6 @@
 ﻿using EnhancedCVAgent.Domain.Common;
 using EnhancedCVAgent.Domain.Exceptions;
+using EnhancedCVAgent.Domain.ValueObjects;
 using EnhancedCVAgent.Domain.ValueObjects.CandidateProfile;
 
 namespace EnhancedCVAgent.Domain.Entities;
