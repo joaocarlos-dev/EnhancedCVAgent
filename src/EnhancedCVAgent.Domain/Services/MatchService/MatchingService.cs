@@ -1,6 +1,6 @@
 ﻿using EnhancedCVAgent.Domain.Entities;
 using EnhancedCVAgent.Domain.Exceptions;
-using EnhancedCVAgent.Domain.ValueObjects.Matching;
+using EnhancedCVAgent.Domain.Services.MatchService;
 using System;
 using System.Collections.Generic;
 using System.Text;
