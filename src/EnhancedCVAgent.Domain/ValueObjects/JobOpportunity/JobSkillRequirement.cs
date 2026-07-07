@@ -8,17 +8,19 @@ namespace EnhancedCVAgent.Domain.ValueObjects.JobOpportunity
 {
     public sealed record JobSkillRequirement
     {
-        public JobSkillRequirement(string skill, string? skillExperienceTime)
+        public JobSkillRequirement(string skill, string? skillExperienceTime, RequirementType skillRequirementType)
         {
             if (string.IsNullOrEmpty(skill)){
                 throw new DomainValidationException("Skill cannot be empty.");
             }
 
-            Skill = skill;
+            Skill = skill.Trim().ToLowerInvariant();
             SkillExperienceTime = skillExperienceTime;
+            SkillRequirementType = skillRequirementType;
         }
         public string Skill { get; }
         public string? SkillExperienceTime { get; }
+        public RequirementType SkillRequirementType { get; }
 
     }
 }
