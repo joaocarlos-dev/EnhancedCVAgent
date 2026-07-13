@@ -7,7 +7,7 @@ namespace EnhancedCVAgent.Application.Matching.DTOs
 {
     public class JobOpportunityInput
     {
-        public JobOpportunityInput(List<JobSkillRequirement> jobSkillRequirements, string url, string title, string companyName, string description)
+        public JobOpportunityInput(List<JobSkillRequirementInput> jobSkillRequirements, string url, string title, string companyName, string description)
         {
             JobSkillRequirements = jobSkillRequirements;
             Url = url;
@@ -19,6 +19,6 @@ namespace EnhancedCVAgent.Application.Matching.DTOs
         public string Title { get; set; }
         public string CompanyName { get; set; }
         public string Description { get; set; }
-        public List<JobSkillRequirement> JobSkillRequirements { get; set; }
+        public List<JobSkillRequirementInput> JobSkillRequirements { get; set; }
     }
 }
