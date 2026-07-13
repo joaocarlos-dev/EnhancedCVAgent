@@ -7,12 +7,12 @@ namespace EnhancedCVAgent.Application.Matching.DTOs
 {
     public class SkillInput
     {
-        public SkillInput(string name, SkillLevel skillLevel)
+        public SkillInput(string name, SkillLevel level)
         {
             Name = name;
-            SkillLevel = skillLevel;
+            Level = level;
         }
         public string Name { get; set; }
-        public SkillLevel SkillLevel { get; set; }
+        public SkillLevel Level { get; set; }
     }
 }
