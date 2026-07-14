@@ -1,5 +1,4 @@
-﻿using EnhancedCVAgent.Domain.ValueObjects.JobOpportunity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
