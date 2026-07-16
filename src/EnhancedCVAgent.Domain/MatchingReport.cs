@@ -29,19 +29,20 @@ namespace EnhancedCVAgent.Domain
         public void AddMissingRequiredSkill(Skill requiredSkill)
         {
             _missingRequiredSkills.Add(requiredSkill);
-            _reasons.Add($"Missing required skill '{requiredSkill}'");
+            _reasons.Add($"Missing required skill '{requiredSkill.Name}'");
         }
 
         public void AddMissingPreferredSkill(Skill preferredSkill)
         {
             _missingPreferredSkills.Add(preferredSkill);
-            _reasons.Add($"Missing preferred skill '{preferredSkill}'");
+            _reasons.Add($"Missing preferred skill '{preferredSkill.Name}'");
         }
 
         public void AddSkillMatch(SkillMatch skillMatch)
         {
             _skillMatches.Add(skillMatch);
-            _reasons.Add($"Matched skill '{skillMatch}'");
+            _reasons.Add($"Matched skill '{skillMatch.CandidadeSkill.Name}' " +
+                $"at level '{skillMatch.CandidadeSkill.Level}' ({skillMatch.Points} points)");
         }
 
         public void SetScore(MatchScore score)
